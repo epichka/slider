@@ -1,5 +1,5 @@
 function createSlider() {
-    const newSlider = {
+    let newSlider = {
             imgs: [],
             currentImg: 0,
             buttonPrev: null, 
@@ -53,6 +53,5 @@ function createSlider() {
             }
         
         };
-
     return newSlider;
     };

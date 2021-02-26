@@ -1,1 +1,0 @@
-const slider1 = createSlider();
