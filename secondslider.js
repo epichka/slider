@@ -1,1 +1,1 @@
-const slider2 = allSlider();
+const slider2 = createSlider();

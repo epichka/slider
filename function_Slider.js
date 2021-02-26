@@ -1,4 +1,4 @@
-function allSlider() {
+function createSlider() {
     const newSlider = {
             imgs: [],
             currentImg: 0,
