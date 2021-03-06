@@ -1,21 +1,21 @@
-function createSlider() {
+const slider_factory = {
+    createSlider: function() {
     let newSlider = {
             imgs: [],
             currentImg: 0,
             buttonPrev: null, 
             buttonNext: null,
             sliderImg: null, 
-        
-            start: function(id) {
-                let that = this;
 
-                let elSelector = '#' + id;
-                let el = document.getElementById(elSelector);
-        
+            start: function(elid) {
+                let that = this;
+                
+                let el = document.getElementById(elid);
+                
                 this.buttonPrev = el.querySelector('.toPreviousImg');
                 this.buttonNext = el.querySelector(".toNextImg");
                 this.sliderImg = el.querySelector(".slideimg");
-        
+
                 this.buttonPrev.addEventListener('click', function(e) {
                     that.onPrevBtnClick();
                 });
@@ -54,4 +54,5 @@ function createSlider() {
         
         };
     return newSlider;
-    };
+    }
+}
